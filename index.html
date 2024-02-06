@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+
+    <!--This is Navbar Section-->
+
+    <nav class="navbar p-2 navbar-expand-sm navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand  text-white" href="#">FOODTANK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active  text-white" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#">MEDIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#">JOIN</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <br>
+
+<!--This is Hero Section-->
+
+        <div class="container-fluid hero-background">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="text-white hero-title">WELCOME TO FOODTANK</h4>
+                    <P class="text-white">
+                        We’re building a global community for safe, healthy, nourished eaters.
+                        We aim to educate, inspire, advocate, and create change.
+                        </P>
+    
+                    <button type="button" class="btn btn-lg px-5 btn-primary">BECOME A FOOD TANK MEMBER</button>
+    
+                </div>
+            </div>
+        </div>
+
+<br><br><br>
+
+<!--This is Media Section-->
+
+<div class="container shadow p-5 bg-dark">
+        <h4 class="text-center text-bg-light">FOOD TANK MEDIA</h4>
+        <p class="text-center text-bg-light">THE THINK TANK FOR FOOD</p>
+
+        <div class="row bg-white">
+            <div class="column-gap-lg-3 text-center col-md-4 col-sm-6 p-1 col-6">
+                <div class="card shadow p-3">
+                    <img class="rounded" src="./picture/01.jpg" alt="Cinque">
+                    <p>New Report from Chicago Council and Rockefeller Foundation Charts Path to Zero Hunger in an Equitable World Amid Global Crises</p>
+                </div>
+            </div>
+
+            <div class="column-gap-lg-3 text-center col-md-4 col-sm-6 p-1 col-6">
+                <div class="card shadow p-3">
+                    <img src="./picture/02.jpg" class="rounded" alt="Cinque">
+                    <p>New York City Commits to 33 Percent Reduction in Food-Based Emissions by 2030 to Combat Climate Change</p>
+                </div>
+            </div>
+
+            <div class="column-gap-lg-3 text-center col-md-4 col-sm-6 p-1 col-6">
+                <div class="card shadow p-3">
+                    <img class="rounded" src="./picture/03.jpg" alt="Cinque">
+                    <p>Dr. Abdou Tenkouano to Become New Director General of ICIPE</p>
+                </div>
+            </div>
+
+            <div class="column-gap-lg-3 text-center col-md-4 col-sm-6 p-1 col-6">
+                <div class="card shadow p-3">
+                    <img class="rounded" src="./picture/04.jpg" alt="Cinque">
+                    <p>GrowNYC Workers Secure Historic Union Victory, Paving the Way for Better Conditions in the Food Supply Chain</p>
+                </div>
+            </div>
+
+            <div class="column-gap-lg-3 text-center col-md-4 col-sm-6 p-1 col-6">
+                <div class="card shadow p-3">
+                    <img class="rounded" src="./picture/05.jpg" alt="Cinque">
+                    <p>How To Make Your 2024 Food Predictions Come True</p>
+                </div>
+            </div>
+
+            <div class="column-gap-lg-3 text-center col-md-4 col-sm-6 p-1 col-6">
+                <div class="card shadow p-3">
+                    <img class="rounded" src="./picture/06.jpg" alt="Cinque">
+                    <p>Careit: Turning Food Surplus into Community Solutions</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+<br><br><br>
+
+<!--This is AgeChecker Section-->
+
+    <div class="container text-center bg-white">
+        <div class="row">
+            <div class="card shadow ">
+                <div class="card-body">
+                    <label for="age">Enter your age:</label>
+                    <input type="number" id="age" class="form-control" placeholder="Your age">
+                    <button class="btn btn-primary mt-3" onclick="checkAge()">Check Age</button>
+                    <div id="ageCard" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br><br><br>
+
+<!--This is Contact Section-->
+    <div class="container-fluid bg-black text-white shadow">
+        <div class="row p-5">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h6>Get to know us</h6>
+                <a href="#">Our Mission</a><br>
+                <a href="#">Partners</a><br>
+                <a href="#">Board of Directors</a>
+                <a href="#">Advisory Board</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h6>Connect</h6>
+                <a href="#">Contact Us</a>
+                <a href="#">Get Email Updates</a>
+                <a href="#">Get Summit Tickects</a>
+                <a href="#">Upcoming Events</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h6>Legal</h6>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h6>Get involved</h6>
+                <a href="#">become a Member</a><br>
+                <a href="#">Volunteer</a>
+                <a href="#">Donate</a>
+                <a href="#">Write For Us</a>
+            </div>
+        </div>
+    </div>
+
+<!--This is footer Section-->
+    <footer class="bg-dark text-white text-center p-1">
+        <i><h3>Food Tank</h3>
+        <p>&copy; 2024 My Website. All rights reserved By Mahamudul Munna.</p></i>
+    </footer>
+
+    <!-- Bootstrap JS-->
+    <script src="./bootstrap.bundle.js"></script>
+
+
+    <!--This is JS Section-->
+    <script>
+        function checkAge() {
+            var age = document.getElementById('age').value;
+            var ageCard = document.getElementById('ageCard');
+
+            if (age >= 18) {
+                ageCard.innerHTML = '<div class="alert alert-success" role="alert">You are an adult</div>';
+            } else {
+                ageCard.innerHTML = '<div class="alert alert-warning" role="alert">You are a child</div>';
+            }
+        }
+    </script>
+
+</body>
+</html>

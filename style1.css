@@ -1,0 +1,30 @@
+.my-card-img{
+    height: 20px;
+    width: 50px;
+    align-self: center;
+}
+
+.card{
+    border: none !important;
+}
+
+.play-icon{
+    width: 60px;
+    align-self: center;
+}
+
+.hero-background{
+    background-image: url(./picture/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-size: cover;
+    height: 520px;
+}
+
+.hero-title{
+    margin-top: 220px;
+}
+
+.nav-logo{
+    width: 150px;
+}
